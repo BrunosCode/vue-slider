@@ -35,16 +35,19 @@ body {
     justify-content: center;
 }
 .c-carousel__bullets {
-    position: absolute;
-    bottom: .5rem;
-    background-color: rgba(0, 0, 0, .3);
-    padding: .5rem;
-    border-radius: 2rem;
-    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: .5rem;
+    background-color: rgba(0, 0, 0, .3);
+    padding: .25rem;
+    border-radius: 2rem;
+}
+.c-carousel__bullet {
+    padding: .5rem;
+    font-size: 1.25rem;
 }
 .c-carousel__arrow {
     margin: .5rem;
