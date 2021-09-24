@@ -17,6 +17,7 @@ const app = new Vue (
                 }
             ],
             currentImg: 0,
+            intervalID: null
         },
         methods: {
             nextImg: function() {
@@ -35,7 +36,18 @@ const app = new Vue (
             },
             selectImg: function(i) {
                 this.currentImg = i;
+            },
+            startInterval: function() {
+                this.intervalID = setInterval(this.nextImg, 2000);
+            },
+            stopInterval: function() {
+                if(this.intervalID != null) {
+                    clearInterval(this.intervalID);
+                }
             }
+        },
+        mounted: function() {
+            this.startInterval();
         }
     }
 );

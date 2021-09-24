@@ -17,7 +17,7 @@
 </head>
 <body>
     <main id="root" class="l-main">
-        <div class="c-carousel">
+        <div @mouseover="stopInterval" @mouseleave="startInterval" class="c-carousel">
             <button @click="previousImg" class="c-btn c-carousel__arrow">
                 <i class="fas fa-chevron-left"></i>
             </button>
