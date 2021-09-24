@@ -1,0 +1,52 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* LAYOUTS  */
+.l-main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-btn {
+    border: none;
+    background-color: unset;
+}
+.c-btn:hover {
+    cursor: pointer;
+    transform: scale(.9);
+}
+
+.c-carousel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.c-carousel__bullets {
+    position: absolute;
+    bottom: .5rem;
+    background-color: rgba(0, 0, 0, .3);
+    padding: .5rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.c-carousel__arrow {
+    margin: .5rem;
+    font-size: 2rem;
+}
